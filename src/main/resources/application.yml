@@ -1,0 +1,25 @@
+server:
+  port: 54250
+spring:
+  application:
+    name: multipleDataSources
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      master-db: #主数据源
+        driverClassName: com.mysql.jdbc.Driver
+        url: jdbc:mysql://127.0.0.1:3306/test_master_db?characterEncoding=utf-8&serverTimezone=UTC
+        username: root
+        password: 123456
+      slave-db:  #从数据源
+        driverClassName: com.mysql.jdbc.Driver
+        url: jdbc:mysql://127.0.0.1:3306/test_slave_db?characterEncoding=utf-8&serverTimezone=UTC
+        username: root
+        password: 123456
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+logging:
+  path: ./logs/multipleDataSources.log
+  level:
+    com.xavier: error
+
