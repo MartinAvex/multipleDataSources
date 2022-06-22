@@ -1,11 +1,11 @@
 package com.xavier.mapper;
 
-import org.springframework.stereotype.Repository;
+import com.xavier.domian.Permission;
 
 import java.util.List;
 
-public interface PermissionMapper<T> {
+public interface PermissionMapper {
 
-    List<T> findAll();
+    List<Permission> findAll();
 
 }

@@ -1,11 +1,11 @@
 package com.xavier.service;
 
-import org.springframework.stereotype.Service;
+import com.xavier.domian.Permission;
 
 import java.util.List;
 
-public interface PermissionService<T> {
+public interface PermissionService {
 
-    List<T> findAll();
+    List<Permission> findAll();
 
 }

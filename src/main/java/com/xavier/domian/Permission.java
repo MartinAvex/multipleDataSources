@@ -1,7 +1,13 @@
-package com.xavier.dao;
+package com.xavier.domian;
 
 import lombok.Data;
 
+/**
+ * @ClassName: Permission
+ * @Author: Xavier
+ * @CreateTime: 2022-06-22  14:43
+ * @Description: 数据库实体类
+ */
 @Data
 public class Permission {
 
